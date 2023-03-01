@@ -9,7 +9,10 @@ function Header(props) {
     <>
       <header className={classes.header}>
         <h1>ReactMeals</h1>
-        <HeaderCartButton />
+        <HeaderCartButton
+          onShowCart={props.onShowCart}
+          onHideCart={props.onHideCart}
+        />
       </header>
       <div className={classes['main-image']}>
         <img src={mealsImage} alt="A table full of delicious food!" />
